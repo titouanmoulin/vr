@@ -11,17 +11,19 @@
             <a-asset-entity id="table" src="./assets/Table.glb"></a-asset-entity>
             <a-asset-entity id="chair" src="./assets/Chair.glb"></a-asset-entity>
             <a-asset-entity id="window" src="./assets/Window.glb"></a-asset-entity>
+            <a-asset-entity id="guitar" src="./assets/Guitar.glb"></a-asset-entity>
         </a-asset>
         
         <a-plane color="#38424e" height="50" width="50" rotation="-90 0 0"></a-plane>
         <a-entity gltf-model="#computer" scale ="10 10 10" position="0 0.95 -2">
-            <a-entity geometry="primitive: box" material="color: white; emissive: white; emissiveIntensity: 3" scale="0.045 0.035 0.01" position="0 0.05 0.013" rotation="-8 0 0"></a-entity>
+            <a-entity geometry="primitive: box" material="color: white; emissive: white; emissiveIntensity: 3" scale="0.045 0.035 0.01" position="0 0.05 0.013" rotation="-8 0 0" animation="property: material.emissiveIntensity; to: 0; loop: true; dur: 100"></a-entity>
         </a-entity>
         <a-entity gltf-model="#table" scale ="0.13 0.1 0.1" position="0 0.2 -2"></a-entity>
         <a-entity gltf-model="#chair" position="-0.3 0.2 -1" rotation="0 145 0"></a-entity>
         <a-entity gltf-model="#window" position="-1.2 1 -1.5" rotation="0 90 0">
             <a-entity geometry="primitive: box" material="color: white; emissive: white; emissiveIntensity: 3" scale="0.87 1.15 0.03" position="0 0.6 0"></a-entity>
         </a-entity>
+        <a-entity gltf-model="#guitar" position="-1 1 -2.3" rotation="-16 0 0" scale="0.6 0.6 0.6"></a-entity>
         <a-sky color="#38424e"></a-sky>
         <a-entity light="type: ambient; color: #38424e; intensity: 0.2"></a-entity>
         <a-entity id="rig" position="0.8 0.9 -0.3" rotation="5 40 4">
